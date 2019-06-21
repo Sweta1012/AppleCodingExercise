@@ -2,32 +2,68 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#root{  
+  width: 80%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 30% 30% 30%; */
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper > div {
+  padding: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myList {
+  /* width: 73%; */
+  width: 100%;
+  height: 320px;
+  /* color: white; */
+  display: inline-block;
+  /* border: 2px solid #4aa9ce;
+  margin-right: 6px;
+  border-radius: 2px; */
+}
+.myList button{
+  /* border: 1px solid #21e642; */
+  width: 100%;
+  /* background-color: #53bb13; */
+  /* color: #fff; */
+  /* font-size: 18px; */
+  /* border-radius: 4px 4px 0px 0px; */
+}
+
+/* button {
+  height: 30px;
+  width: 70px;
+  margin: 10px;
+} */
+
+.removebtn {
+  display: none;
+  width: 140%;
+  height: 10%;
+}
+
+.removeImg:hover + .removebtn, .removebtn:hover {
+    background-color: aquamarine;
+    display: inline-block;
+    background-color: #ea4a6f;
+    color: white;
+    border: 1px solid #ea4a6f;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.title {
+  text-align: left;
+  color: green;
+  margin: 6px 0px;
+}
+
+.container {
+  margin: 10px;
 }
